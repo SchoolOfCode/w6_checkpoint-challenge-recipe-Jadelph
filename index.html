@@ -14,12 +14,18 @@
     <section id="recipe-section">
         <h2 class="section-heading"> Recipe Finder</h2>
         <h3>No ideas in mind? </h3>
-        <input aria-label="food-input" id="food-input" onchange="handleFoodChange()" />
+        <input aria-label="food-input" id="food-input" placeholder="Enter a main ingredient" onchange="handleFoodChange()" />
 
         <button id="recipe-button" onclick="handleRecipeClick()">
         Decide for me! 
       </button>
         <a id="recipe-label"></a>
+        <p class="label"></p>
+        <p class="cuisine-type"></p>
+        <p class="dish-type"></p>
+        <p class="health-labels"></p>
+        <p class="diet-labels"></p>
+        <p class="meal-type"></p>
     </section>
     <script src="./main.js"></script>
 </body>
