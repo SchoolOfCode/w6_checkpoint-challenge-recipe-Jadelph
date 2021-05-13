@@ -1,0 +1,17 @@
+    .section-heading {
+        color: #712E1E;
+        font-size: 80px;
+        font-family: 'Poiret One', cursive;
+        text-align: center;
+    }
+    
+    h3 {
+        color: #d44000;
+        font-family: 'Poiret One', cursive;
+        text-align: center;
+    }
+    
+    body {
+        background-image: url("pexels-lukas-616484.jpg");
+        background-size: 2000px;
+    }

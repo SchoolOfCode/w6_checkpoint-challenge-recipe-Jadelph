@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <section id="recipe-section">
-      <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
-      <input
-        aria-label="food-input"
-        id="food-input"
-        onchange="handleFoodChange()"
-      />
-      <button id="recipe-button" onclick="handleRecipeClick()">
-        Give me a recipe!
+        <h2 class="section-heading"> Recipe Finder</h2>
+        <h3>No ideas in mind? </h3>
+        <input aria-label="food-input" id="food-input" onchange="handleFoodChange()" />
+
+        <button id="recipe-button" onclick="handleRecipeClick()">
+        Decide for me! 
       </button>
-      <a id="recipe-label"></a>
+        <a id="recipe-label"></a>
     </section>
     <script src="./main.js"></script>
-  </body>
+</body>
+
 </html>
