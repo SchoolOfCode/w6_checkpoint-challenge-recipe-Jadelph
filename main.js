@@ -24,6 +24,10 @@ async function displayRecipe() {
     foodToSearch = document.querySelector("#food-input").value;
     let recipeObject = await fetchRecipe(foodToSearch);
     let {
+
+        //to add more of the object names for full display
+        // style more css
+        // create a for loop to go through the array so the recipe is different each time.
         label,
         cuisineType,
         dishType,
