@@ -15,8 +15,6 @@ async function fetchRecipe(food) {
     console.log(dataResponse);
     const dataResult = dataResponse.hits[0].recipe;
     console.log(dataResult)
-
-
     return dataResult;
 };
 const YOUR_APP_ID = "81aff1ee"
@@ -34,6 +32,8 @@ async function displayRecipe() {
         mealType,
         image,
     } = recipeObject;
+    let imageEl = document.querySelector(".food-image")
+    imageEl.src = image;
     let labelEl = document.querySelector(".label");
     labelEl.innerHTML = label;
     console.log(labelEl)
@@ -47,8 +47,7 @@ async function displayRecipe() {
     dietLabelsEl.innerHTML = dietLabels;
     let mealTypeEl = document.querySelector(".meal-type");
     mealTypeEl.innerHTML = mealType;
-    let imageEl = document.querySelector(".food-image")
-    imageEl.src = image;
+
 }
 let button = document.querySelector("button");
 button.addEventListener("click", displayRecipe);
