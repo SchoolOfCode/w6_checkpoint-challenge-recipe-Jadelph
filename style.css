@@ -1,0 +1,52 @@
+            .section-heading {
+                color: #712E1E;
+                font-size: 80px;
+                font-family: 'Poiret One', cursive;
+                text-align: center;
+            }
+            
+            h3 {
+                color: #d44000;
+                font-family: 'Poiret One', cursive;
+                text-align: center;
+                font-size: 20px;
+            }
+            
+            input {
+                margin-left: 500px;
+            }
+            
+            button {
+                box-shadow: inset 0px 1px 0px 0px #a6827e;
+                background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+                background-color: #7d5d3b;
+                border-radius: 15px;
+                border: 1px solid #54381e;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: Trebuchet MS;
+                font-size: 13px;
+                padding: 6px 16px;
+                text-decoration: none;
+                text-shadow: 0px 1px 0px #4d3534;
+            }
+            
+            button:hover {
+                background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+                background-color: #634b30;
+            }
+            
+            button:active {
+                position: relative;
+                top: 1px;
+            }
+            
+            body {
+                background-image: url("pexels-lukas-616484.jpg");
+                background-size: 2000px;
+            }
+            
+            img {
+                border-radius: 75%;
+            }
