@@ -35,7 +35,11 @@ async function displayRecipe() {
         dietLabels,
         mealType,
         image,
+        url,
+        ingredientLines,
+        ingredients,
     } = recipeObject;
+
     let imageEl = document.querySelector(".food-image")
     imageEl.src = image;
     let labelEl = document.querySelector(".label");
@@ -51,6 +55,10 @@ async function displayRecipe() {
     dietLabelsEl.innerHTML = dietLabels;
     let mealTypeEl = document.querySelector(".meal-type");
     mealTypeEl.innerHTML = mealType;
+    let urlEl = document.querySelector(".link-to-recipe");
+    urlEl.innerHTML = url;
+    let ingredientLinesEl = document.querySelector(".ingredient-lines");
+    ingredientLinesEl.innerHTML = ingredientLines;
 
 }
 let button = document.querySelector("button");
