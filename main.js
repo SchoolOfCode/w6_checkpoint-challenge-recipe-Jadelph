@@ -55,8 +55,8 @@ async function displayRecipe() {
     dietLabelsEl.innerHTML = dietLabels;
     let mealTypeEl = document.querySelector(".meal-type");
     mealTypeEl.innerHTML = mealType;
-    //this is linking back to Fetch page 
-    //now its broke alltogether yay 
+    //tested and now the link is working but you have to refresh the page before typing a seperater
+    //food item as it will add the link onto the next recipe page
     let urlEl = document.createElement("a");
     urlEl.innerHTML = url;
     urlEl.href = url;
