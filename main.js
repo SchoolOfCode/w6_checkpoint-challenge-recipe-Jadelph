@@ -37,7 +37,7 @@ async function displayRecipe() {
         image,
         url,
         ingredientLines,
-        ingredients,
+
     } = recipeObject;
 
     let imageEl = document.querySelector(".food-image")
@@ -55,8 +55,14 @@ async function displayRecipe() {
     dietLabelsEl.innerHTML = dietLabels;
     let mealTypeEl = document.querySelector(".meal-type");
     mealTypeEl.innerHTML = mealType;
-    let urlEl = document.querySelector(".link-to-recipe");
+    //this is linking back to Fetch page 
+    //now its broke alltogether yay 
+    let urlEl = document.createElement("a");
     urlEl.innerHTML = url;
+    urlEl.href = url;
+    document.getElementById('link-div').appendChild(urlEl);
+    console.log(url);
+
     let ingredientLinesEl = document.querySelector(".ingredient-lines");
     ingredientLinesEl.innerHTML = ingredientLines;
 
